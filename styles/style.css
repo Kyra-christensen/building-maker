@@ -100,16 +100,18 @@ footer {
     margin-bottom: 20px;
 }
 
-.slogan {
+.slogans {
     display: flex;
-    flex-direction: row;
-
-
+    flex-direction: column;
+    align-items: center;
 }
 
 label {
     margin-left: 50px;
     margin-right: 50px;
+    background-color: rgba(0,0,0,0.45);
+    color: white;
+    background-: ;
 }
 
 .list {
@@ -117,11 +119,15 @@ label {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0,0,0,0.45);
+    color: white;
 }
 
 .count {
     display: flex;
     justify-content: center;
+    background-color: rgba(0,0,0,0.45);
+    color: white;
 }
 main{
     height:100%;
