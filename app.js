@@ -4,11 +4,13 @@ import { makeStatsString } from './utils.js';
 const waterfrontDropdown = document.querySelector('#waterfront-dropdown');
 const skylineDropdown = document.querySelector('#skyline-dropdown');
 const castleDropdown = document.querySelector('#castle-dropdown');
-const cityImageEl = document.querySelector('#city-images');
 const sloganInputEl = document.querySelector('#slogan-input');
 const sloganButton = document.querySelector('#slogan-button');
 const sloganListEl = document.querySelector('.list');
 const sloganCountEl = document.querySelector('.count');
+const waterfrontImg = document.querySelector('#waterfront-img');
+const skylineImg = document.querySelector('#skyline-img');
+const castleImg = document.querySelector('#castle-img');
 
 // let state
 let waterfrontCount = 0;
@@ -22,7 +24,7 @@ waterfrontDropdown.addEventListener('change', () =>{
 // get user input
     const id = waterfrontDropdown.value; 
 
-    cityImageEl.src = `./assets/waterfront-${id}.jpeg`;
+    waterfrontImg.src = `./assets/waterfront-${id}.jpeg`;
 // use user input to update state
     waterfrontCount++;
 // update DOM to reflect the new state
@@ -33,7 +35,7 @@ waterfrontDropdown.addEventListener('change', () =>{
 skylineDropdown.addEventListener('change', () => {
     const id = skylineDropdown.value;
 
-    cityImageEl.src = `./assets/skyline-${id}.jpeg`;
+    skylineImg.src = `./assets/skyline-${id}.jpeg`;
     
     skylineCount++;
     
@@ -44,7 +46,7 @@ skylineDropdown.addEventListener('change', () => {
 castleDropdown.addEventListener('change', () => {
     const id = castleDropdown.value;
 
-    cityImageEl.src = `./assets/castle-${id}.jpeg`;
+    castleImg.src = `./assets/castle-${id}.jpeg`;
     
     castleCount++;
     
